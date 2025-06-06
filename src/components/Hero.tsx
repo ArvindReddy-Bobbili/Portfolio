@@ -43,9 +43,9 @@ const Hero = () => {
         {/* Profile Image with floating animation */}
         <div className="relative w-32 h-32 md:w-40 md:h-40 mb-8">
           <img
-            src="/src/pp.png"
+            className="w-full h-full object-cover rounded-full"
+            src="/Portfolio/pp.png"
             alt="Profile"
-            className="w-full h-full object-cover rounded-full animate-float"
           />
         </div>
 

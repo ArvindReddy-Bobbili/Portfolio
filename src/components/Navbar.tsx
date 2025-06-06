@@ -42,7 +42,11 @@ const Navbar = () => {
           {/* Logo */}
           <a href="/" className="flex items-center">
             <div className="w-10 h-10 overflow-hidden rounded-lg">
-              <img src="/Favicon.jpeg" alt="Logo" className="w-full h-full object-cover" />
+              <img
+                src="/Portfolio/Favicon.jpeg"
+                alt="Logo"
+                className="w-full h-full object-cover"
+              />
             </div>
           </a>
 
