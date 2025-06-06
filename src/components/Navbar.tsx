@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Menu, Heart, Moon, Sun, Github, Linkedin, Mail } from 'lucide-react';
 import { useTheme } from '../context/ThemeContext';
 import { cn } from '../utils/cn';
+import faviconImg from '/Favicon.jpeg';
 
 const navLinks = [
   { href: '#experience', label: 'Experience' },
@@ -43,7 +44,7 @@ const Navbar = () => {
           <a href="/" className="flex items-center">
             <div className="w-10 h-10 overflow-hidden rounded-lg">
               <img
-                src="/Portfolio/Favicon.jpeg"
+                src={faviconImg}
                 alt="Logo"
                 className="w-full h-full object-cover"
               />

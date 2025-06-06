@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { cn } from '../utils/cn';
+import ppImg from '/pp.png';
 
 const Hero = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -44,7 +45,7 @@ const Hero = () => {
         <div className="relative w-32 h-32 md:w-40 md:h-40 mb-8">
           <img
             className="w-full h-full object-cover rounded-full"
-            src="/Portfolio/pp.png"
+            src={ppImg}
             alt="Profile"
           />
         </div>
