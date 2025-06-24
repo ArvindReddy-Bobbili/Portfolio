@@ -9,6 +9,9 @@ interface ProjectCardProps {
 
 const ProjectCard = ({ project }: ProjectCardProps) => {
   const [isHovered, setIsHovered] = useState(false);
+  
+  // Check if live URL is valid (not '#' or empty)
+  const hasLiveUrl = project.liveUrl && project.liveUrl !== '#';
 
   return (
     <div
@@ -29,15 +32,17 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
           "absolute inset-0 bg-primary-900/70 flex items-center justify-center gap-4 transition-opacity duration-300",
           isHovered ? "opacity-100" : "opacity-0"
         )}>
-          <a
-            href={project.liveUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="p-3 rounded-full bg-white text-primary-600 hover:bg-primary-50 transition-colors duration-200"
-            aria-label="View live demo"
-          >
-            <ExternalLink className="w-5 h-5" />
-          </a>
+          {hasLiveUrl && (
+            <a
+              href={project.liveUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-3 rounded-full bg-white text-primary-600 hover:bg-primary-50 transition-colors duration-200"
+              aria-label="View live demo"
+            >
+              <ExternalLink className="w-5 h-5" />
+            </a>
+          )}
           <a
             href={project.sourceUrl}
             target="_blank"
