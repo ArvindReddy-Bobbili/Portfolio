@@ -32,6 +32,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
           "absolute inset-0 bg-primary-900/70 flex items-center justify-center gap-4 transition-opacity duration-300",
           isHovered ? "opacity-100" : "opacity-0"
         )}>
+          {/* Only show live demo button if valid URL exists */}
           {hasLiveUrl && (
             <a
               href={project.liveUrl}
