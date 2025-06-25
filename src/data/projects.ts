@@ -41,7 +41,7 @@ export const projectsData: Project[] = [
     description: 'This project uses a Genetic Algorithm to optimize load balancing across multiple simulated servers in real-time, focusing on metrics like latency, throughput, error rate, and load balance variance. It\'s containerized with Docker and offers observability using Prometheus and Grafana.',
     image: networkImg,
     technologies: ['Python', 'Grafana', 'Prometheus', 'Docker'],
-    liveUrl: 'https://github.com/Anmol-Bhatta/network-ga-optimizer',
+    liveUrl: '#',
     sourceUrl: 'https://github.com/Anmol-Bhatta/network-ga-optimizer',
   },
   {
@@ -56,8 +56,8 @@ export const projectsData: Project[] = [
   {
     id: 6,
     title: 'Personal Finance Tracker (coming soon)',
-    description: 'n open-source, end-to-end web app that ingests messy bank statements, auto-categorises transactions, builds a live financial snapshot, retrieves expert guidance from a vector knowledge base, and uses a local LLM RAG chain to generate personalised advice.',
-    image: snackImg,
+    description: 'An open-source, end-to-end web app that ingests messy bank statements, auto-categorises transactions, builds a live financial snapshot, retrieves expert guidance from a vector knowledge base, and uses a local LLM RAG chain to generate personalised advice.',
+    image: "",
     technologies: ['Python', 'Pandas', 'rapidfuzz', 'Chroma Vector DB', 'Ollama+Llama-3-8B', 'LangChain', 'Streamlit', 'Docker'],
     liveUrl: '#',
     sourceUrl: 'https://github.com/ArvindReddy-Bobbili/Perosnal-Financial-Advisor',
